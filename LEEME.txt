@@ -1,0 +1,16 @@
+MI CALENDARIO DE CEFALEAS — PRIMERA VERSIÓN
+
+Contenido: index.html, app.js, manifest.webmanifest, sw.js, iconos.
+
+PARA PUBLICAR EN GITHUB PAGES
+1. Creá un repositorio público nuevo en GitHub (o usá uno vacío).
+2. Subí los seis archivos de esta carpeta a la raíz del repositorio (NO el ZIP).
+3. En Settings > Pages > Build and deployment, elegí Deploy from a branch, main y / (root). Guardá.
+4. Esperá a que aparezca la dirección HTTPS de GitHub Pages.
+5. Abrí la dirección en Safari del iPhone y elegí Compartir > Agregar a pantalla de inicio.
+
+IMPORTANTE: Los registros se guardan en el navegador de ese dispositivo. Si abrís la misma URL en Chrome y Safari, NO comparten registros. Tampoco se sincronizan entre dispositivos. En Ajustes, descargá periódicamente una copia JSON y guardala en Archivos/iCloud. No borres datos del sitio ni uses navegación privada. El enlace de GitHub Pages publica solo el código, NO tus registros.
+
+PDF: Mis patrones > Exportar > tipo de informe > Preparar PDF / Imprimir. En iOS, desde la vista de impresión podés compartir/guardar el documento como PDF según el navegador.
+
+Primera versión: las estadísticas están basadas en registros manuales. No hay cuentas, servidores de datos ni diagnósticos. El seguimiento de medicación y menstruación es opcional.
