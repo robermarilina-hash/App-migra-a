@@ -15,7 +15,7 @@ h1,h2,.sectiontitle{font-family:Merriweather,Georgia,serif;letter-spacing:-.025e
 @media(min-width:560px){.hero{height:145px}.calendar button{font-size:16px}}
 
 /* Papeles originales en alta resolución, sin recortes de capturas */
-body{background-color:#fbf4e9;background-image:url('./papel-origami.webp');background-position:center top;background-size:100% auto;background-repeat:no-repeat}
+body{background-color:#fbf4e9;background-image:var(--paper-image,url('./papel-oceano.webp'));background-position:center top;background-size:100% auto;background-repeat:no-repeat}
 main{background:transparent;padding-top:16px}
 main:after{display:none}
 .hero{height:125px;margin-bottom:4px}
@@ -29,4 +29,13 @@ main:after{display:none}
 .theme-select{margin-top:12px}
 .nav button{font-size:12px;padding:7px 13px}
 @media(min-width:560px){body{background-size:560px auto;background-position:center top}}
-</style></head><body><main id="app"></main><nav class="nav"><button id="nav-calendar" onclick="page='calendar';render()">▦<br>Calendario</button><button id="nav-patterns" onclick="page='patterns';render()">▥<br>Mis patrones</button><button id="nav-settings" onclick="page='settings';render()">⚙<br>Ajustes</button></nav><div id="overlay"></div><div id="print" class="printonly"></div><script src="app.js?v=20261116-hq"></script></body></html>
+
+/* Temas completos: papel, acentos, calendario y figura superior */
+:root[data-theme="oceano"]{--paper-image:url("./papel-oceano.webp")}
+:root[data-theme="cerezo"]{--paper-image:url("./papel-cerezo.webp")}
+:root[data-theme="niebla"]{--paper-image:url("./papel-niebla.webp")}
+:root[data-theme="bruma"]{--paper-image:url("./papel-bruma.webp")}
+:root[data-theme="ambar"]{--paper-image:url("./papel-ambar.webp")}
+.hero{isolation:auto;overflow:visible}.hero .origami{display:none}.hero .theme-hero-art{position:absolute;top:0;right:0;width:96px;height:96px;object-fit:cover;object-position:center;border-radius:14px;box-shadow:0 4px 12px #26332b24;z-index:0;pointer-events:none}.hero .muted,.hero h1,.hero-rule{position:relative;z-index:1}.hero h1{max-width:calc(100% - 102px)}
+@media(max-width:360px){.hero .theme-hero-art{width:82px;height:82px}}
+</style></head><body><main id="app"></main><nav class="nav"><button id="nav-calendar" onclick="page='calendar';render()">▦<br>Calendario</button><button id="nav-patterns" onclick="page='patterns';render()">▥<br>Mis patrones</button><button id="nav-settings" onclick="page='settings';render()">⚙<br>Ajustes</button></nav><div id="overlay"></div><div id="print" class="printonly"></div><script src="app.js?v=20261116-theme-fix"></script></body></html>
