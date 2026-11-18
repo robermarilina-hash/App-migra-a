@@ -65,4 +65,21 @@ main{padding:12px 16px 94px;max-width:440px;overflow:visible}
 body{background-size:100% auto;background-position:center top}
 @media(min-width:440px){body{background-size:440px auto}}
 @media(max-width:360px){main{padding-left:11px;padding-right:11px}.calendar button{height:35px}.nav button{min-width:78px;padding:5px 9px}.hero .theme-hero-art{width:63px;height:63px}}
+
+/* Cabeceras integradas: una sola imagen de papel por tema, sin stickers */
+body{background:#fbf6ed!important;background-image:none!important}
+main{background:#fbf6ed;max-width:440px;padding:12px 15px 96px;overflow:visible}
+.hero{height:154px;margin:-12px -15px 9px;padding:24px 20px 0;overflow:hidden;isolation:isolate;background-color:#fbf6ed;background-image:var(--paper-image);background-size:100% auto;background-repeat:no-repeat;background-position:center top}
+.hero .muted{margin-top:0;font-size:10px;letter-spacing:.13em;position:relative;z-index:1}
+.hero h1{font-size:29px;max-width:57%;position:relative;z-index:1;margin-top:5px}
+.hero-rule{position:relative;z-index:1}
+.hero .theme-hero-art,.hero .origami{display:none!important}
+.calendar-card{background:#fffaf4;border-radius:18px;padding:10px 9px 12px}
+.calendar{gap:3px}.calendar button{height:37px;font-size:13px}
+.calendar-card .legend{flex-wrap:wrap;gap:7px;font-size:10px}
+.theme-preview{max-width:230px;margin:12px auto 0}
+.theme-preview img{height:108px;object-fit:cover;object-position:center top}
+.nav{background:#fffaf4}.nav button{font-size:11px}
+@media(max-width:360px){.hero{height:138px}.calendar button{height:34px}}
+@media(min-width:440px){.hero{background-size:440px auto}}
 </style></head><body><main id="app"></main><nav class="nav"><button id="nav-calendar" onclick="page='calendar';render()">▦<br>Calendario</button><button id="nav-patterns" onclick="page='patterns';render()">▥<br>Mis patrones</button><button id="nav-settings" onclick="page='settings';render()">⚙<br>Ajustes</button></nav><div id="overlay"></div><div id="print" class="printonly"></div><script src="app.js?v=20261116-compact-v7"></script></body></html>
